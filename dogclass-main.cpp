@@ -51,7 +51,13 @@ private:                   // begin private section
 
 }; //don't forget semi-colon with C++ classes!!
 ostream& operator << (ostream& stream, const Dog& info) {
-	stream << info. << "This is" << info.getName();
+	stream << "  .-\"-.\n" << endl;
+	stream << " /|6 6 | \\\\n" << endl;
+	stream << "{/(_0_)\\}\n" << endl;
+	stream << " _/ ^ \\_" << endl;
+	stream << "(/ /^\\ \\)-'" << endl; 
+	stream << " \"\"' '\"\" " << endl;
+	stream<< "This is" << info.getName();
 	return stream;
 	};
 
