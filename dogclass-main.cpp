@@ -44,9 +44,16 @@ public:                    // begin public section
 		cout << "   " << dogName << "\n" << endl;
 		return; //optional return
 	}
+	friend ostream& operator << (ostream& stream, const Dog& info);
+
 private:                   // begin private section
 	string dogName;        // private member 
+
 }; //don't forget semi-colon with C++ classes!!
+ostream& operator << (ostream& stream, const Dog& info) {
+	stream << info. << "This is" << info.getName();
+	return stream;
+	};
 
 
 int main() {
